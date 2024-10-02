@@ -13,8 +13,6 @@ const multiplesOfThree = () => {
     }
 }
 
-
-
 // Problem 3
 const multiplesOfThreeOrFive = () => {
     for(let i =0; i < 100; i++) {
@@ -23,3 +21,10 @@ const multiplesOfThreeOrFive = () => {
         }
     }
 };
+
+// Problem 4
+const untilNum = (num) => {
+    for (let i = 1; i <= num; i++){
+        console.log(i)
+    }
+}
