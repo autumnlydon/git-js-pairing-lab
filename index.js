@@ -27,4 +27,12 @@ const untilNum = (num) => {
     for (let i = 1; i <= num; i++){
         console.log(i)
     }
+};
+
+// Problem 5
+
+const multiply = (num1, num2) => {
+    return num1 * num2;
 }
+console.log(multiply(3, 6));
+
