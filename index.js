@@ -61,8 +61,6 @@ const triangleArea = (height, base) => {
     return (height * base) / 2
 }
 
-console.log(triangleArea(5, 7));
-
 //problem 9
 
 const betweenTwentyAndFourty = (num1) => {
@@ -70,5 +68,17 @@ const betweenTwentyAndFourty = (num1) => {
         return true;
     } else {
         return false;
+    }
+}
+
+//Problem 10
+
+const largest = (a, b, c) => {
+    if (a > b && a > c) {
+        return a
+    } else if (b > a && b > c) {
+        return b
+    } else {
+        return c
     }
 }
