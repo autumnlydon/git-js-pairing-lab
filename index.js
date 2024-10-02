@@ -9,7 +9,7 @@ const fiveToOneHundred = () => {
 // Problem 2
 const multiplesOfThree = () => {
     for (let i = 3; i < 100; i+=3){
-        console.log(i)
+        console.log(i);
     }
 }
 
@@ -25,7 +25,7 @@ const multiplesOfThreeOrFive = () => {
 // Problem 4
 const untilNum = (num) => {
     for (let i = 1; i <= num; i++){
-        console.log(i)
+        console.log(i);
     }
 };
 
@@ -34,5 +34,13 @@ const untilNum = (num) => {
 const multiply = (num1, num2) => {
     return num1 * num2;
 }
-console.log(multiply(3, 6));
 
+//Problem 6
+
+const add = (num1, num2) => {
+    if (num1 !== num2){
+        return num1 + num2;
+    } else {
+        return (num1 + num2) * 3;
+    }
+}
