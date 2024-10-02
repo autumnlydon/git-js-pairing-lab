@@ -44,3 +44,13 @@ const add = (num1, num2) => {
         return (num1 + num2) * 3;
     }
 }
+
+//Problem 7
+
+const isNegative = (num1) => {
+   if (num1 < 0) {
+    return true;
+   } else if (num1 > 0) {
+    return false;
+   }
+}
