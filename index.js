@@ -82,3 +82,25 @@ const largest = (a, b, c) => {
         return c
     }
 }
+
+//Problem 11 
+
+const printTime = () => {
+    let d = new Date(); //Java
+    let hour = d.getHours();
+    let minute = d.getMinutes();
+    let second = d.getSeconds();
+    console.log(`${hour}:${minute}:${second}`);
+}
+printTime();
+
+//problem 13
+
+const getExtention = (fileName) =>{
+    return fileName.substring(fileName.lastIndexOf('.') +1);
+ // Method .substring returns the part of the string after
+ // the index of the char '.' in the string stored in
+ // variable fileName which we acquire by calling 
+ // the method .lastIndexOf('.') + 1 
+}
+console.log(getExtention('index.js'));
