@@ -13,4 +13,13 @@ const multiplesOfThree = () => {
     }
 }
 
-multiplesOfThree()
+
+
+// Problem 3
+const multiplesOfThreeOrFive = () => {
+    for(let i =0; i < 100; i++) {
+        if (i % 3 === 0 || i % 5 === 0){
+            console.log(i);
+        }
+    }
+};
