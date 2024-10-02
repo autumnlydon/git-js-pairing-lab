@@ -54,3 +54,12 @@ const isNegative = (num1) => {
     return false;
    }
 }
+
+// Problem 8
+
+const triangleArea = (height, base) => {
+    return (height * base) / 2
+}
+
+console.log(triangleArea(7, 6))
+
