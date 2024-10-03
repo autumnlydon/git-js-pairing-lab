@@ -108,3 +108,40 @@ const changeString = (string) => {
     let i = string.length
     const alphabet = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
 }
+//Problem 11 
+
+const printTime = () => {
+    let d = new Date(); //Java
+    let hour = d.getHours();
+    let minute = d.getMinutes();
+    let second = d.getSeconds();
+    console.log(`${hour}:${minute}:${second}`);
+}
+printTime();
+
+//problem 13
+
+const getExtention = (fileName) =>{
+    return fileName.substring(fileName.lastIndexOf('.') +1);
+ // Method .substring returns the part of the string after
+ // the index of the char '.' in the string stored in
+ // variable fileName which we acquire by calling 
+ // the method .lastIndexOf('.') + 1 
+}
+console.log(getExtention('index.js'));
+
+//Problem 15
+
+const switchLetters = (string) => {
+    let chars = string.split(''); //This line splits my string 
+    //into an array of characters.
+    let lastChar = chars.splice(chars.length - 1, 1) //This
+    //line removes & stores the last element of array chars in lastChar.
+    chars.splice(chars.length + 1, 0, chars[0]) //This line adds the element of array chars
+    //index[0] at the index after the last element.
+    chars.splice(0, 1); //this line removes a single element at index 0 from chars.
+    string = lastChar + chars.join(''); //concatenates chars in new order.
+    return string;  
+
+}
+console.log(switchLetters('bye'));
