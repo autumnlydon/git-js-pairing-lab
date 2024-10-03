@@ -116,7 +116,7 @@ const switchLetters = (string) => {
     //index[0] at the index after the last element.
     chars.splice(0, 1); //this line removes a single element at index 0 from chars.
     string = lastChar + chars.join(''); //concatenates chars in new order.
-    return string; 
+    return string;  
 
 }
 console.log(switchLetters('bye'));
