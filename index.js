@@ -1,5 +1,6 @@
 //Code your solutions in this file
 // Problem 1
+
 const fiveToOneHundred = () => {
     for (let i = 5; i < 100; i++) {
         console.log(i)
@@ -7,6 +8,7 @@ const fiveToOneHundred = () => {
 };
 
 // Problem 2
+
 const multiplesOfThree = () => {
     for (let i = 3; i < 100; i+=3){
         console.log(i);
@@ -14,6 +16,7 @@ const multiplesOfThree = () => {
 }
 
 // Problem 3
+
 const multiplesOfThreeOrFive = () => {
     for(let i =0; i < 100; i++) {
         if (i % 3 === 0 || i % 5 === 0){
@@ -23,6 +26,7 @@ const multiplesOfThreeOrFive = () => {
 };
 
 // Problem 4
+
 const untilNum = (num) => {
     for (let i = 1; i <= num; i++){
         console.log(i);
@@ -81,4 +85,26 @@ const largest = (a, b, c) => {
     } else {
         return c
     }
+}
+
+//Problem 12
+
+const isLeapYear = (year) => {
+    if (year % 4 === 0) {
+        return true
+    } else {
+        return false
+    }
+}
+
+//Problem 14
+const absoluteNineteen = (num) => {
+    return Math.abs (19 - num)
+}
+
+//Problem 16
+
+const changeString = (string) => {
+    let i = string.length
+    const alphabet = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
 }
