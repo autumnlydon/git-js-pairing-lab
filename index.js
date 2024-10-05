@@ -105,9 +105,15 @@ const absoluteNineteen = (num) => {
 //Problem 16
 
 const changeString = (string) => {
-    let i = string.length
-    const alphabet = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
+    let newString = ''
+    for (let i =0; i < string.length; i++){
+        newString += String.fromCharCode(string.charCodeAt(i) + 1)
+    }
+    return newString
 }
+console.log(changeString('hello'))
+
+
 //Problem 11 
 
 const printTime = () => {
@@ -128,7 +134,7 @@ const getExtention = (fileName) =>{
  // variable fileName which we acquire by calling 
  // the method .lastIndexOf('.') + 1 
 }
-console.log(getExtention('index.js'));
+//console.log(getExtention('index.js'));
 
 //Problem 15
 
@@ -144,4 +150,4 @@ const switchLetters = (string) => {
     return string;  
 
 }
-console.log(switchLetters('bye'));
+//console.log(switchLetters('bye'));
